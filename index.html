@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perfil de Franco</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #5f5c5c;
+        margin: 0;
+        padding: 0;
+        color: #333;
+      }
+
+      header {
+        background-color: #fff;
+        padding: 15px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #ddd;
+      }
+
+      header nav a {
+        margin-right: 25px;
+        color: #333;
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      header button {
+        background-color: #05daff;
+        border: none;
+        color: #fff;
+        padding: 8px 15px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: 500;
+      }
+
+      main {
+        max-width: 1000px;
+        margin: 40px auto;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 30px;
+      }
+
+      .tarjeta-perfil {
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+      }
+
+      .encabezado-perfil {
+        background-color: #2bb8da;
+        height: 80px;
+      }
+
+      .contenido-perfil {
+        padding: 20px;
+        position: relative;
+        top: -40px;
+      }
+
+      .contenido-perfil img {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        border: 3px solid #fff;
+        position: relative;
+        top: -45px;
+      }
+
+      .contenido-perfil h2 {
+        margin: -20px 0 5px 0;
+        font-size: 1.5rem;
+      }
+
+      .contenido-perfil p {
+        margin: 5px 0;
+        line-height: 1.6;
+        font-size: 0.95rem;
+      }
+
+      .editar-perfil {
+        color: #2bb8da;
+        font-size: 0.9rem;
+        text-decoration: none;
+      }
+
+      .seccion {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+      }
+
+      .seccion h3 {
+        margin-top: 0;
+        font-size: 1.1rem;
+      }
+
+      .solicitudes-conexion,
+      .conexiones {
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+      }
+
+      .solicitudes-conexion h3,
+      .conexiones h3 {
+        margin-top: 0;
+      }
+
+      .solicitud,
+      .conexion {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 12px;
+      }
+
+      .info-solicitud,
+      .info-conexion {
+        display: flex;
+        align-items: center;
+      }
+
+      .solicitud img,
+      .conexion img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+
+      .botones-solicitud button {
+        background: cadetblue;
+        border: 1px solid #ccc;
+        border-radius: 50%;
+        width: 28px;
+        height: 28px;
+        margin-left: 5px;
+        cursor: pointer;
+        font-size: 1rem;
+      }
+
+      .botones-solicitud button:hover {
+        background-color: #e9f7fc;
+      }
+
+      .conexiones small {
+        color: #777;
+      }
+      .espacio {
+        margin-right: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a class="espacio" href="#">Perfil</a>
+        <a href="#">Inicio</a>
+        <a href="#">Mi Perfil</a>
+        <a href="#">Buscar Conexiones</a>
+      </nav>
+      <button>Cerrar Sesión</button>
+    </header>
+
+    <main>
+      <div>
+        <div class="tarjeta-perfil">
+          <div class="encabezado-perfil"></div>
+          <div class="contenido-perfil">
+            <img
+              src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcW5xc29ubDBveG1vcnJ1d3NjaGVjZTZ4Ymg5YXd6OWcybnFtcnduNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/zwPRprvrP4Lm0/giphy.gif"
+              alt="Foto de perfil"
+            />
+            <h2>Franco Corvalán Bacho</h2>
+            <p>
+              <strong>ANF, Chile.</strong><br />
+              Longboard - Bodyboard - Técnico HVAC
+            </p>
+            <p>
+              Apasionado por crear experiencias digitales hermosas y
+              funcionales. Cuando no estoy codificando, disfruto explorando los
+              fiordos chilenos y capturando la belleza de la naturaleza en
+              fotografías.
+            </p>
+            <a href="#" class="editar-perfil">⚙️ Editar perfil</a>
+          </div>
+        </div>
+
+        <div class="seccion">
+          <h3>Educación</h3>
+          <p>
+            <strong>Coding Dojo - Bootcamp de Desarrollo Full Stack</strong
+            ><br />
+            Noviembre 2025<br />
+            Triple cinturón negro en Python, MERN y C# ... ojalá.
+          </p>
+        </div>
+      </div>
+
+      <aside>
+        <div class="solicitudes-conexion">
+          <h3>Solicitudes de Conexión (2)</h3>
+
+          <div class="solicitud">
+            <div class="info-solicitud">
+              <img
+                src="https://octodex.github.com/images/scubatocat.png"
+                alt="scubatocat"
+              />
+              <span>scubatocat</span>
+            </div>
+            <div class="botones-solicitud">
+              <button>✔</button>
+              <button>✖</button>
+            </div>
+          </div>
+
+          <div class="solicitud">
+            <div class="info-solicitud">
+              <img
+                src="https://octodex.github.com/images/hula_loop_octodex03.gif"
+                alt="Amira El-Masry"
+              />
+              <span>Amira El-Masry</span>
+            </div>
+            <div class="botones-solicitud">
+              <button>✔</button>
+              <button>✖</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="conexiones" style="margin-top: 20px">
+          <h3>Tus Conexiones (500+)</h3>
+
+          <div class="conexion">
+            <div class="info-conexion">
+              <img
+                src="https://octodex.github.com/images/deckfailcat.png"
+                alt="Deckfailcat"
+              />
+              <span>Deckfailcat</span>
+            </div>
+          </div>
+
+          <div class="conexion">
+            <div class="info-conexion">
+              <img
+                src="https://octodex.github.com/images/vinyltocat.png"
+                alt="vinyltocat"
+              />
+              <span>Vinyltocat</span>
+            </div>
+          </div>
+
+          <div class="conexion">
+            <div class="info-conexion">
+              <img
+                src="https://octodex.github.com/images/heisencat.png"
+                alt="heisencat"
+              />
+              <span>Heisencat</span>
+            </div>
+          </div>
+
+          <div class="conexion">
+            <div class="info-conexion">
+              <img
+                src="https://octodex.github.com/images/yogitocat.png"
+                alt="yogitocat"
+              />
+              <span>Yogitocat</span>
+            </div>
+          </div>
+
+          <div class="conexion">
+            <div class="info-conexion">
+              <img
+                src="https://octodex.github.com/images/universetocat.png"
+                alt="universetocat"
+              />
+              <span>Universetocat</span>
+            </div>
+          </div>
+
+          <div class="conexion">
+            <div class="info-conexion">
+              <img
+                src="https://octodex.github.com/images/securitocat.png"
+                alt="securitocat"
+              />
+              <span>Securitocat</span>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </main>
+  </body>
+</html>
